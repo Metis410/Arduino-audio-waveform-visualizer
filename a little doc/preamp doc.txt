@@ -1,0 +1,55 @@
+This preamp project main objective is tobe a way to learn how to use an opamp as a differential amp and learning more about dynamic microphone
+
+Scope:
+-portable
+-easy to build
+-components off the shelve
+-decent preamp
+-mainly for mic with a transformer
+-audio output at line level and for headphone
+
+Function (Interface):
+-adjustable: headphone and line output, opamp gain, wave display
+-port for charging and for code modification (not in the same port)
+
+-Inside(software):
++ 1st screen:
+++ display waveform of audio input
+++ adjustable wave
+
++ 2nd screen:
+++ display measure voltage/ chip temp, best voltage indicator, and batter percent (if you use a different board with more pin you can add a current reader if you like)
+
+-Components:
+BMS 4s or 5s(if possible)
+4s or 5s charger
+buck converter
+an adc (Optional. If you like your wave to be the best)
+7 segments voltage display
+2 switches
+4 pots
+an esp32 c3 or any esp32 for best performent
+tft screen
+a touch sensor
+4 3.5 3 knots female jack or 4 knots 
+audio amp for headphone( recommend getting a 5v one)
+2 opamp ne5532
+(not listed in here are mainly single electrical component like resistor and capacitor)
+
+BUILDING
+-the main amplifier;
++ require: 2 opamp ne5532, resistor, capacitor(catalytic and ceramic), battery 4s or 5s (as long as its more than 5v, boost converter not recomented due to noise),
+
+*Show the preamp skematic*
+
+
+ 
+
+
+
+https://www.build-electronic-circuits.com/zener-diode/ (3.3v cap Zener for the esp32c3 analog pin)
+
+
+
+ 
+
